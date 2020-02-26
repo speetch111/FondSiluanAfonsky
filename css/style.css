@@ -748,7 +748,10 @@ body {
   margin-bottom: 18px;
 }
 
-.help__item-pic {}
+.help__item-pic,
+.recovered__item-pic {
+  width: 100%;
+}
 
 .help__item-money {
   display: flex;
@@ -1286,11 +1289,11 @@ body {
   }
   .help__item-name,
   .recovered__item-name {
-    text-align: center;
+    text-align: left;
   }
   .help__item-img,
   .recovered__item-img {
-    margin: 0 auto;
+    
   }
   .help__item-stroke img {
   width: 100%;    
@@ -1304,12 +1307,7 @@ body {
   .news-title {
     margin-bottom: 15px;
   }
-  .news__item-top {
-    background-image: none;
-  }
-  .news__item-top::before {
-    content: none;
-  }
+
   .news__item-title {
     width: 75%;
   }
