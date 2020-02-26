@@ -475,9 +475,10 @@ body {
   transition: width 0.3s;
 }
 
-/* .nav-link--main::before {
+.header__nav-link.is-active::before,
+.footer__menu-link.is-active::before {
   width: 100%;
-} */
+}
 
 .header__nav-link:hover::before,
 .footer__menu-link:hover::before {
@@ -526,8 +527,8 @@ body {
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: #F4CE77;
-  top: -5px;
+  background-color: #EFEFEF;
+  top: -8px;
 
 }
 
@@ -538,7 +539,7 @@ body {
 }
 
 .btn--good__dead {
-  padding: 5px 68px 4px 37px;
+  padding: 9px 68px 9px 37px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -552,8 +553,9 @@ body {
   position: absolute;
   background-image: url(../img/heart.jpg);
   background-repeat: no-repeat;
-  width: 31px;
-  height: 28px;
+  background-size: contain;
+  width: 40px;
+  height: 37px;
   right: 0;
   top: 0;
   z-index: 5;
@@ -589,6 +591,18 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+}
+
+.about__content::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #F4CE77;
+  border-radius: 1px;
+ left: 0;
+  bottom: -25px;
 }
 
 .about__content-title {
@@ -608,6 +622,17 @@ body {
 .about__content-author {
   margin-left: auto;
   margin-bottom: 21px;
+  position: relative;
+}
+.about__content-author::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #F4CE77;
+  border-radius: 1px;
+  right: 0;
+  top: -5px;
 }
 
 .about__content-text {}
@@ -708,7 +733,7 @@ body {
 .more:before {
   content: "";
   position: absolute;
-  width: 0;
+  width: 60px;
   height: 1px;
   background-color: #F4CE77;
   border-radius: 1px;
@@ -716,9 +741,7 @@ body {
   bottom: 0px;
 }
 
-.more:hover::before {
-  width: 60px;
-}
+
 
 .help__item-img,
 .recovered__item-img {
@@ -772,7 +795,7 @@ body {
 .help__item-btn__link {
   display: block;
   padding-top: 5px;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
   text-align: center;
   text-transform: uppercase;
   color: #CA030F;
@@ -786,12 +809,12 @@ body {
 .help__item-btn__link::after {
   content: "";
   position: absolute;
-  background-image: url(../img/heaer1.png);
+  background-image: url(../img/help__heart.jpg);
   background-size: cover;
-  width: 40px;
-  height: 40px;
-  right: -16px;
-  top: -10px;
+  width: 36px;
+  height: 32px;
+  right: -1px;
+  top: -1px;
 }
 
 .help__all,
@@ -810,7 +833,7 @@ body {
 .recovered__all-link::before {
   content: "";
   position: absolute;
-  width: 0;
+  width: 100%;
   height: 2px;
   background-color: #F4CE77;
   border-radius: 1px;
@@ -818,10 +841,7 @@ body {
   bottom: 0px;
 }
 
-.help__all-link:hover::before,
-.recovered__all-link:hover::before {
-  width: 100%;
-}
+
 
 /* help-styles-end */
 
@@ -905,12 +925,14 @@ body {
   align-items: center;
   margin-bottom: 32px;
   position: relative;
-  min-height: 100px;
+  min-height: 74px;
   margin: 0 0 auto 0;
-  background-image: url(../img/number__border.svg);
+  background-image: url(../img/border.png);
   background-repeat: no-repeat;
-  background-size: 60px 74px;
-  background-position: 162px 9px;
+  background-size: contain;
+  background-position: center right;
+  margin-bottom: 17px;
+  flex-grow: 1;
 }
 
 .news__item-top::before {
@@ -920,20 +942,27 @@ body {
   height: 1px;
   background-color: #F4CE77;
   border-radius: 1px;
-  left: 0;
-  bottom: -10px;
+  left: 0px;
+  bottom: 0px;
 }
+
+
 
 .news__item-title {
   font-size: 17.28px;
   line-height: 21px;
   color: #2B2B2B;
   width: 153px;
+  position: relative;
+  padding-bottom: 17px;
 }
+
+
 
 .news__item-date {
   max-width: 50px;
   margin-right: 4px;
+  padding-top: 12px;
 
 
 }
@@ -944,10 +973,9 @@ body {
   text-align: center;
   color: #4C4C4C;
   margin-bottom: 5px;
-
+  margin-right: 5px;
+  position: relative;
 }
-
-
 
 .month {
   display: block;
@@ -1320,9 +1348,17 @@ body {
     max-width: 100%;
 
   }
+  
+  .about__content::before {
+    bottom: 0px;
+  }
 
   .about__content-author {
     margin-bottom: 0;
+  }
+
+  .about__img-pic {
+    margin-top: 50px;
   }
 
   .about__img {
