@@ -1397,7 +1397,7 @@ body {
 
 @media(max-width:610px) {
   .header__nav-list {
-    top: 150px;
+    top: 160px;
   }
 
   .header__bottom-btn_deed {
