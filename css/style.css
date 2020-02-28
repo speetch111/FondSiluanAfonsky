@@ -601,7 +601,7 @@ body {
   height: 1px;
   background-color: #F4CE77;
   border-radius: 1px;
- left: 0;
+  left: 0;
   bottom: -25px;
 }
 
@@ -624,6 +624,7 @@ body {
   margin-bottom: 21px;
   position: relative;
 }
+
 .about__content-author::before {
   content: "";
   position: absolute;
@@ -1261,20 +1262,24 @@ body {
   .about__img::after {
     content: none;
   }
+
   .help,
   .recovered {
     padding-bottom: 41px;
   }
+
   .help-title,
   .recovered-title {
     margin-bottom: 30px;
   }
+
   .help__items,
   .recovered__items,
   .news__items {
     flex-wrap: wrap;
     margin-bottom: -25px;
   }
+
   .help__item,
   .recovered__item,
   .news__item {
@@ -1282,28 +1287,33 @@ body {
     margin-right: 20px;
     margin-bottom: 50px;
   }
+
   .help__item:nth-of-type(2n),
   .recovered__item:nth-of-type(2n),
   .news__item:nth-of-type(2n) {
     margin-right: 0;
   }
+
   .help__item-name,
   .recovered__item-name {
     text-align: left;
   }
+
   .help__item-img,
-  .recovered__item-img {
-    
-  }
+  .recovered__item-img {}
+
   .help__item-stroke img {
-  width: 100%;    
+    width: 100%;
   }
+
   .help__item-collected {
     width: 90px;
   }
+
   .help__item-lost {
     width: 120px;
   }
+
   .news-title {
     margin-bottom: 15px;
   }
@@ -1315,19 +1325,28 @@ body {
   .news__item {
     margin-bottom: 10px;
   }
+
   .footer {
     padding-bottom: 40px;
   }
+
   .footer__inner {
     flex-wrap: wrap;
   }
+
   .footer__left {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }
+
   .footer__logo {
     margin-bottom: 20px;
+  }
+
+  .header__nav-link.is-active::before,
+  .footer__menu-link.is-active::before {
+    content: none;
   }
 
 
@@ -1346,7 +1365,7 @@ body {
     max-width: 100%;
 
   }
-  
+
   .about__content::before {
     bottom: 0px;
   }
@@ -1364,6 +1383,7 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
+
   .section-title {
     font-size: 22px;
   }
@@ -1394,18 +1414,21 @@ body {
   .about__content-title {
     margin-top: 25px;
   }
+
   .footer__nav {
     justify-content: space-around;
     width: 100%;
     margin-bottom: 20px;
   }
+
   .footer__social {
-   margin: 0 auto;
+    margin: 0 auto;
   }
 }
 
 
 @media(max-width:550px) {
+
   .help__item,
   .recovered__item,
   .news__item {
