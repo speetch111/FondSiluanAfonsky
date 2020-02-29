@@ -929,14 +929,13 @@ body {
   align-items: center;
   margin-bottom: 32px;
   position: relative;
-  min-height: 74px;
+  min-height: 80px;
   margin: 0 0 auto 0;
   background-image: url(../img/border.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center right;
   margin-bottom: 17px;
-  flex-grow: 1;
 }
 
 .news__item-top::before {
